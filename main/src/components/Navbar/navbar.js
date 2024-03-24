@@ -1,17 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import '../styles/navbar.css';
 
-// We import NavLink to utilize the react router.
-// import { NavLink } from "react-router-dom";
-
 export default function Navbar() {
+    const [isShown, setIsShown] = useState(false);
+
     return (
-        <div>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                <a className="logo_svg" href="/">
-                    <h1>LOGO</h1>
-                </a>
-            </nav>
-        </div>
+        <nav className="main_nav nav-straight-line">
+            {isShown && (
+                <div className="dropped_nav"
+                    onMouseEnter={() => setIsShown(true)}
+                    onMouseLeave={() => setIsShown(false)}
+                >
+                    <div className="tabs_container">
+                        <a href="/">LINK 1</a>
+                        <a href="/">LINK 2</a>
+                        <p className="logo">
+                            LOGO
+                        </p>
+                        <a href="/">LINK 3</a>
+                        <a href="/">LINK 4</a>
+                    </div>
+                </div>
+            )}
+            <div className="bubble_logo"
+                onMouseEnter={() => setIsShown(true)}
+                onMouseLeave={() => setIsShown(false)}
+            >
+                <h1 className="arrow_down expand_menu">
+                    V
+                </h1>
+            </div>
+        </nav>
     );
 }
