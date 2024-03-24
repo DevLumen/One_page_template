@@ -22,11 +22,11 @@ export default function Navbar() {
                     </div>
                 </div>
             )}
-            <div className="bubble_logo"
-                onMouseEnter={() => setIsShown(true)}
-                onMouseLeave={() => setIsShown(false)}
-            >
-                <h1 className="arrow_down expand_menu">
+            <div className="bubble_logo">
+                <h1 className="arrow_down expand_menu"
+                    onMouseEnter={() => setIsShown(true)}
+                    onMouseLeave={() => setIsShown(false)}
+                >
                     V
                 </h1>
             </div>
