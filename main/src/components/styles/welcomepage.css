@@ -47,13 +47,14 @@
     font-size: 80px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     letter-spacing: 1px;
+    color: rgb(231, 179, 127);
 }
 
 .message_container {
     height: 10vh;
     width: 28vw;
     position: absolute;
-    margin-top: 59.6vh;
+    margin-top: 58.6vh;
     margin-left: 8vw;
     text-align: left;
     /* border: 2px black solid; */
