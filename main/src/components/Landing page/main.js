@@ -1,6 +1,9 @@
 import React from "react";
 import '../styles/main.css';
 import WelcomePage from "../Welcome page/welcome_page";
+import CollectionsPage from "../Collections page/collections_page";
+import ReviewsPage from "../Reviews page/reviews_page";
+import Footer from "../Footer/footer";
 
 export default function Main() {
     return (
@@ -9,13 +12,13 @@ export default function Main() {
                 <WelcomePage/>
             </div>
             <div id="collection" className="block_two">
-                {/* <h1>MAIN PAGE COMPONENT 2 GOES HERE</h1> */}
+                <CollectionsPage/>
             </div>
             <div id="reviews" className="block_three">
-                {/* <h1>MAIN PAGE COMPONENT 3 GOES HERE</h1> */}
+                <ReviewsPage/>
             </div>
             <div id="footer" className="footer_block">
-                {/* <h1>FOOTER COMPONENT GOES HERE</h1> */}
+                <Footer/>
             </div>
         </div>
     )

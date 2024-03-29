@@ -1,0 +1,16 @@
+.collections_container {
+    border: 2px black solid;
+    width: 65vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-left: 20vw;
+    padding-top: 4vh;
+}
+
+.product_card {
+    border: 2px solid black;
+    width: 15vw;
+    height: 42vh;
+}
