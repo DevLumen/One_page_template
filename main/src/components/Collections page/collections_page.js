@@ -1,5 +1,6 @@
 import React from "react";
 import '../styles/collections.css';
+import jacket_image from '../../images/jacket.png'
 
 export default function CollectionsPage() {
 
@@ -13,7 +14,7 @@ export default function CollectionsPage() {
         product2: {
             name: "product2",
             image: "this will be replaced with an image for product 2",
-            desc: "this is a description for product 2",
+            desc: "this is size options for product 2",
             price: "$50",
         },
         product3: {
@@ -52,19 +53,32 @@ export default function CollectionsPage() {
             desc: "this is a description for product 8",
             price: "$55",
         },
-        
+
     }
 
     const products = [product.product1, product.product2, product.product3, product.product4, product.product5, product.product6, product.product7, product.product8];
 
     return (
-        <div id="collections" className="collections_container">
+        <div id="cards" className="cards_container">
+
+
             {products.map((product, i) => (
-                <div className="product_card">
-                    <h1>{product.name}</h1>
-                    <p>{product.desc}</p>
-                    <p>{product.image}</p>
-                    <p>{product.price}</p>
+                <div class="card">
+
+                    <div class="imgBox">
+                        <img src={jacket_image} alt="jacket_img" class="mouse"></img>
+                    </div>
+
+                    <div class="contentBox cards_container">
+                        <div className="product_card">
+                            <h3>{product.name}</h3>
+                            <p>{product.desc}</p>
+                            <div>{product.image}</div>
+                            <h2 className="price">{product.price}</h2>
+                            <a href="#" class="buy">Buy Now</a>
+                        </div>
+                    </div>
+
                 </div>
             ))}
         </div>
