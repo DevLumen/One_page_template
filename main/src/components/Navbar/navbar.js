@@ -9,6 +9,9 @@ export default function Navbar() {
     // const collection = useRef(null);
     // const reviews = useRef(null);
 
+    let cards = document.getElementsByClassName("card");
+
+
     return (
         <nav className="main_nav nav-straight-line">
             {isShown && (
@@ -17,14 +20,14 @@ export default function Navbar() {
                     onMouseLeave={() => setIsShown(false)}
                 >
                     <div className="tabs_container">
-                        <a href="#home"><span className="tab_span">About me</span></a>
-                        <a href="#collection"><span className="tab_span">Skills</span></a>
+                        <a href="#welcome"><span className="tab_span">About me</span></a>
+                        <a href="#skills"><span className="tab_span">Skills</span></a>
                         <div className="logo">
                             <p>
                                 LOGO
                             </p>
                         </div>
-                        <a href="#reviews"><span className="tab_span">Projects</span></a>
+                        <a href="#projects"><span className="tab_span">Projects</span></a>
                         <a href="#footer"><span className="tab_span">Contact me</span></a>
                     </div>
                 </div>
