@@ -12,7 +12,8 @@ export default function WelcomePage() {
                     <h1 className="header_text">Welcome.</h1>
                 </div>
                 <img className="my_pic" src={me}></img>
-                {/* Add a typer functionality here to type out dynamically on page, welcome message */}
+              
+              {/* I am a... */}
                 <h1>
                     <ReactTyped
                         strings={["Frontend Developer", "QA Engineer", "UI/UX Designer"]}
@@ -23,6 +24,8 @@ export default function WelcomePage() {
                         showCursor={true}
                     />
                 </h1>
+
+                {/* About me... */}
                 <h2>
                     <ReactTyped strings={[
                         "I design and code beautiful projects, and I absolutely love what I do. ^6000"
