@@ -1,28 +1,29 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import '../styles/welcomepage.css';
-import image1 from '../../images/top_photo.jpg';
-import image2 from '../../images/bottom_photo.jpg'
+import me from '../../images/My_Profile.png';
+import {ReactTyped} from 'react-typed'
 
 export default function WelcomePage() {
 
     return (
         <div id="home" className="welcome_container">
             <div className="content_container">
-                {/* <div className="image1_container">
-                    <img src={image1} className="image1" alt="Broken handler here"></img>
-                </div>
-                <div className="image2_container">
-                    <img src={image2} className="image2" alt="Broken handler here"></img>
-                </div> */}
                 <div className="header_container">
                     <h1 className="header_text">Welcome.</h1>
                 </div>
-                {/* <div className="message_container">
-                    <p className="message_text">Some message here for the store should be about this much text so it fits nicely.</p>
-                </div>
-                <div className="button_container">
-                    <button className="explore_button"><a className="explore_anchor" href="#collection">Explore <i class="fa-solid fa-arrow-right"></i></a></button>
-                </div> */}
+                <img className="my_pic" src={me}></img>
+                {/* Add a typer functionality here to type out dynamically on page, welcome message */}
+                <h2>
+                    <ReactTyped strings={[
+                        "Welcome to my Portfolio", 
+                        "My name is Andres Soca", 
+                        "I am a passionate, Full Stack Software Engineer and Quality Assurance Engineer", 
+                        "With a passion for UI/UX design"
+                    ]}  
+                        typeSpeed={100} 
+                        loop 
+                ></ReactTyped>
+                </h2>
             </div>
         </div>
     )
