@@ -5,7 +5,7 @@ export default function ReviewsPage() {
 
     return (
         <div id="reviews" className="container">
-            <h1>Reviews page</h1>
+            <h1>Projects page</h1>
         </div>
     )
 }

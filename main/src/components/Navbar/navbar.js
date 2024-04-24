@@ -17,15 +17,15 @@ export default function Navbar() {
                     onMouseLeave={() => setIsShown(false)}
                 >
                     <div className="tabs_container">
-                        <a href="#home"><span className="tab_span">LINK 1</span></a>
-                        <a href="#collection"><span className="tab_span">LINK 2</span></a>
+                        <a href="#home"><span className="tab_span">About me</span></a>
+                        <a href="#collection"><span className="tab_span">Skills</span></a>
                         <div className="logo">
                             <p>
                                 LOGO
                             </p>
                         </div>
-                        <a href="#reviews"><span className="tab_span">LINK 3</span></a>
-                        <a href="#footer"><span className="tab_span">LINK 4</span></a>
+                        <a href="#reviews"><span className="tab_span">Projects</span></a>
+                        <a href="#footer"><span className="tab_span">Contact me</span></a>
                     </div>
                 </div>
             )}

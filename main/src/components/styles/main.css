@@ -2,10 +2,9 @@ html {
     z-index: 0;
     top: 0;
     bottom: 0;
-
+    overflow: hidden;
     width: 100%;
     height: 100vh;
-
     scroll-behavior: smooth;
     overflow-y: auto;
     overscroll-behavior-y: contain;
@@ -16,6 +15,10 @@ html {
         display: none;
     }
 }
+
+/* body {
+    overscroll-behavior: none;
+} */
 
 .block_one {
     height: 100vh;

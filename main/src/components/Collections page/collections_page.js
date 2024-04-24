@@ -29,34 +29,34 @@ export default function CollectionsPage() {
             desc: "this is a description for product 4",
             price: "$35",
         },
-        product5: {
-            name: "product5",
-            image: "this will be replaced with an image for product 5",
-            desc: "this is a description for product 5",
-            price: "$25",
-        },
-        product6: {
-            name: "product6",
-            image: "this will be replaced with an image for product 6",
-            desc: "this is a description for product 6",
-            price: "$70",
-        },
-        product7: {
-            name: "product7",
-            image: "this will be replaced with an image for product 7",
-            desc: "this is a description for product 7",
-            price: "$50",
-        },
-        product8: {
-            name: "product8",
-            image: "this will be replaced with an image for product 8",
-            desc: "this is a description for product 8",
-            price: "$55",
-        },
+        // product5: {
+        //     name: "product5",
+        //     image: "this will be replaced with an image for product 5",
+        //     desc: "this is a description for product 5",
+        //     price: "$25",
+        // },
+        // product6: {
+        //     name: "product6",
+        //     image: "this will be replaced with an image for product 6",
+        //     desc: "this is a description for product 6",
+        //     price: "$70",
+        // },
+        // product7: {
+        //     name: "product7",
+        //     image: "this will be replaced with an image for product 7",
+        //     desc: "this is a description for product 7",
+        //     price: "$50",
+        // },
+        // product8: {
+        //     name: "product8",
+        //     image: "this will be replaced with an image for product 8",
+        //     desc: "this is a description for product 8",
+        //     price: "$55",
+        // },
 
     }
 
-    const products = [product.product1, product.product2, product.product3, product.product4, product.product5, product.product6, product.product7, product.product8];
+    const products = [product.product1, product.product2, product.product3, product.product4];
 
     return (
         <div id="cards" className="cards_container">
@@ -75,7 +75,6 @@ export default function CollectionsPage() {
                             <p>{product.desc}</p>
                             <div>{product.image}</div>
                             <h2 className="price">{product.price}</h2>
-                            <a href="#" class="buy">Buy Now</a>
                         </div>
                     </div>
 
