@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import '../styles/welcomepage.css';
 import me from '../../images/My_Profile.png';
-import {ReactTyped} from 'react-typed'
+import { ReactTyped } from 'react-typed'
 
 export default function WelcomePage() {
 
@@ -13,16 +13,24 @@ export default function WelcomePage() {
                 </div>
                 <img className="my_pic" src={me}></img>
                 {/* Add a typer functionality here to type out dynamically on page, welcome message */}
+                <h1>
+                    <ReactTyped
+                        strings={["Frontend Developer", "QA Engineer", "UI/UX Designer"]}
+                        typeSpeed={50}
+                        loop
+                        backSpeed={50}
+                        cursorChar=">"
+                        showCursor={true}
+                    />
+                </h1>
                 <h2>
                     <ReactTyped strings={[
-                        "Welcome to my Portfolio", 
-                        "My name is Andres Soca", 
-                        "I am a passionate, Full Stack Software Engineer and Quality Assurance Engineer", 
-                        "With a passion for UI/UX design"
-                    ]}  
-                        typeSpeed={100} 
-                        loop 
-                ></ReactTyped>
+                        "I design and code beautiful projects, and I absolutely love what I do. ^6000"
+                    ]}
+                        typeSpeed={75}
+                        loop
+                        
+                    ></ReactTyped>
                 </h2>
             </div>
         </div>
