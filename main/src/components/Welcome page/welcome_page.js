@@ -16,10 +16,10 @@ export default function WelcomePage() {
               {/* I am a... */}
                 <h1>
                     <ReactTyped
-                        strings={["Frontend Developer", "QA Engineer", "UI/UX Designer"]}
-                        typeSpeed={50}
+                        strings={["Frontend Developer ^2000", "QA Engineer ^2000", "UI/UX Designer ^2000"]}
+                        typeSpeed={55}
                         loop
-                        backSpeed={50}
+                        backSpeed={35}
                         cursorChar=">"
                         showCursor={true}
                     />
@@ -28,11 +28,11 @@ export default function WelcomePage() {
                 {/* About me... */}
                 <h2>
                     <ReactTyped strings={[
-                        "I design and code beautiful projects, and I absolutely love what I do. ^6000"
+                        "Welcome, my name is Andres Soca. ^2000",
+                        "I design and code beautiful projects, and I absolutely love what I do. ^4000"
                     ]}
-                        typeSpeed={75}
+                        typeSpeed={15}
                         loop
-                        
                     ></ReactTyped>
                 </h2>
             </div>
