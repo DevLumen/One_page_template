@@ -1,34 +1,81 @@
 .content_container {
     height: 100%;
     width: 75%;
-    margin-left: 12vw;
+    /* margin-left: 12vw; */
     /* border: 2px black solid; */
 }
 
 .header_container {
-    height: 20vh;
-    width: 38vw;
+    top: 40vh;
+    height: 100vh;
+    width: 100vw;
     position: absolute;
-    margin-top: 30vh;
-    margin-left: 8vw;
-    text-align: left;
-    /* border: 2px black solid; */
 }
 
 .header_text {
-    font-size: 80px;
+    font-size: 10em;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     letter-spacing: 1px;
     color: rgb(231, 179, 127);
 }
 
-.button_container {
-    height: 5vh;
-    width: 8vw;
-    position: absolute;
-    margin-top: 68.5vh;
-    margin-left: 7vw;
-    text-align: left;
-    /* border: 2px black solid; */
+.fade-in {
+    opacity:1;
+    animation: fadeInAnimation ease-in 3.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+    height: 100vh;
+    width: 100vw;
 }
 
+.content {
+    top: 8vh;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+}
+
+/* Used to specifally move my avatar head */
+.my_pic {
+    border: red solid 2px;
+}
+
+.typed_anim {
+    /* text-align: center; */
+    position: relative;
+    bottom: 10vh;
+    color: black;
+    border: red solid 2px;
+}
+
+.fade-out {
+    opacity:0;
+}
+
+.notVisible {
+    display: none;
+}
+
+.speechBubble_container {
+    background-image: url('../../images/speech_bubble.png');
+    top: 5vh;
+    left: 62.5vw;
+    height: 15%;
+    width: 18%;
+    position: absolute;
+    border: 2px green solid;
+}
+
+.speechBubble_typedAnim {
+    color: white;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
