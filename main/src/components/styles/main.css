@@ -16,9 +16,9 @@ html {
     }
 }
 
-/* body {
-    overscroll-behavior: none;
-} */
+body {
+    overscroll-behavior: smooth;
+}
 
 .block_one {
     height: 100vh;

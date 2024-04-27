@@ -41,6 +41,7 @@ a {
     justify-content: center;
     color: #ffffff !important;
     font-weight: 100;
+    font-size: 16px;
     font-family: monospace;
     text-transform: uppercase;
     transition: all 0.3s ease 0s;

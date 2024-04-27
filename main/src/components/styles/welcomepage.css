@@ -5,32 +5,19 @@
     /* border: 2px black solid; */
 }
 
-.header_container {
-    top: 40vh;
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-}
-
-.header_text {
-    font-size: 10em;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    letter-spacing: 1px;
-    color: rgb(231, 179, 127);
-}
 
 .fade-in {
     opacity:1;
-    animation: fadeInAnimation ease-in 3.5s;
+    animation: fadeInAnimation ease-in 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-
+    
     height: 100vh;
     width: 100vw;
 }
 
 .content {
-    top: 8vh;
+    top: 15vh;
     height: 100vh;
     width: 100vw;
     position: absolute;
@@ -53,6 +40,34 @@
     opacity:0;
 }
 
+.header_container {
+    display: flex;
+    justify-content: center;
+    top: 40vh;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+}
+
+.header_text {
+    width: fit-content;
+    height: fit-content;
+    font-size: 10em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 1px;
+    color: rgb(236, 193, 149);
+    -webkit-animation: flickerAnimation 3s ease-in-out infinite, shadowAnimation 3s ease-in-out infinite;
+    -moz-animation: flickerAnimation 3s ease-in-out infinite, shadowAnimation 3s ease-in-out infinite;
+    -o-animation: flickerAnimation 3s ease-in-out infinite, shadowAnimation 3s ease-in-out infinite;
+    animation: flickerAnimation 3s ease-in-out infinite, shadowAnimation 3s ease-in-out infinite;
+}
+
+.header_text:hover {
+    cursor: pointer;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: rgba(231, 184, 137, 0.500);
+}
+
 .notVisible {
     display: none;
 }
@@ -71,6 +86,7 @@
     color: white;
 }
 
+/* For the avatar and animated text to appear slowly in place of the "Welcome" */
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
@@ -79,3 +95,48 @@
         opacity: 1;
     }
 }
+
+/* Fade in and out for "Welcome" and the shadow on "Welcome" */
+@keyframes flickerAnimation {
+    0%   { transform: scale(1); }
+    50%  { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  @-o-keyframes flickerAnimation{
+    0%   { transform: scale(1); }
+    50%  { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  @-moz-keyframes flickerAnimation{
+    0%   { transform: scale(1); }
+    50%  { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  @-webkit-keyframes flickerAnimation{
+    0%   { transform: scale(1); }
+    50%  { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+
+
+
+  @keyframes shadowAnimation {
+    0%   { text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.255); }
+    50% { text-shadow: -12px 6px 2.5px rgba(0, 0, 0, 0.155); }
+    100%   { text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.255); }
+  }
+  @-o-keyframes shadowAnimation{
+    0%   { text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.255); }
+    50% { text-shadow: -12px 6px 2.5px rgba(0, 0, 0, 0.155); }
+    100%   { text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.255); }
+  }
+  @-moz-keyframes shadowAnimation{
+    0%   { text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.255); }
+    50% { text-shadow: -12px 6px 2.5px rgba(0, 0, 0, 0.155); }
+    100%   { text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.255); }
+  }
+  @-webkit-keyframes shadowAnimation{
+    0%   { text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.255); }
+    50% { text-shadow: -12px 6px 2.5px rgba(0, 0, 0, 0.155); }
+    100%   { text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.255); }
+  }
