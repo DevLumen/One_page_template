@@ -11,7 +11,8 @@ export default function WelcomePage() {
         <div id="home" className="welcome_container">
             <div className="content_container">
                 <div className="header_container">
-                    <h1 className={isShown ? 'fade-out' : "header_text"} onClick={() => setIsShown(true)}>Welcome.</h1>
+                    <h1 className={isShown ? 'fade-out' : "header_text"} onClick={() => setIsShown(true)}></h1>
+                    <h1 className={isShown ? 'fade-out' : "header_text"} onClick={() => setIsShown(true)} data-text="Welcome.">Welcome.</h1>
                 </div>
                 {/* isShown being true will set this div and its content to visible if the welcome is clicked */}
                 <div className={!isShown ? 'notVisible' : "fade-in"}>

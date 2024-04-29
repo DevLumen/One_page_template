@@ -18,6 +18,7 @@ a {
     z-index: 1;
     position: fixed;
     top: 0px;
+    
 }
 
 .dropped_nav {
@@ -38,21 +39,51 @@ a {
 }
 
 .tab_span {
+    display: inline-block;
+    position: fixed;
     justify-content: center;
     color: #ffffff !important;
     font-weight: 100;
-    font-size: 16px;
+    font-size: 1.2em;
     font-family: monospace;
     text-transform: uppercase;
     transition: all 0.3s ease 0s;
-    position: fixed;
     transform: translate(-50%, 0);
 }
 
+.tab_span::after {
+    content: '';
+    position: absolute;
+    width: 95%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.tab_span:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
 .tab_span:hover {
+
     font-weight: 700 !important;
     letter-spacing: 3px;
     transition: all 0.3s ease 0s;
+}
+
+.tab_span[aria-selected=true] {
+    text-decoration: underline !important;
+}
+
+/* onClick in react.js page chnages the styling */
+.underlined {
+    text-decoration: underline;
+    color: white;
 }
 
 .logo {

@@ -4,12 +4,16 @@ import '../styles/navbar.css';
 
 export default function Navbar() {
     const [isShown, setIsShown] = useState(false);
+    const [activeTab, setActiveTab] = useState(0);
+    const tabs = ["Home", "Skills", "Projects", "Contact me"];
     // const home = useRef(null);
     // const newProducts = useRef(null);
     // const collection = useRef(null);
     // const reviews = useRef(null);
 
     let cards = document.getElementsByClassName("card");
+
+  
 
 
     return (

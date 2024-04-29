@@ -50,6 +50,7 @@
 }
 
 .header_text {
+    position: relative;
     width: fit-content;
     height: fit-content;
     font-size: 10em;
@@ -62,10 +63,24 @@
     animation: flickerAnimation 3s ease-in-out infinite, shadowAnimation 3s ease-in-out infinite;
 }
 
+.header_text::before {
+    content: attr(data-text);
+    position: absolute;
+    z-index: 1;
+    color: #ececec;
+    pointer-events: none;
+    width: 0;
+    overflow: hidden;
+
+    transition: 0.4s ease-out width;
+}
+
+.header_text:hover::before {
+    width: 100%;
+  }
+
 .header_text:hover {
     cursor: pointer;
-    -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: rgba(231, 184, 137, 0.500);
 }
 
 .notVisible {
@@ -86,6 +101,8 @@
     color: white;
 }
 
+
+
 /* For the avatar and animated text to appear slowly in place of the "Welcome" */
 @keyframes fadeInAnimation {
     0% {
@@ -95,6 +112,7 @@
         opacity: 1;
     }
 }
+
 
 /* Fade in and out for "Welcome" and the shadow on "Welcome" */
 @keyframes flickerAnimation {
@@ -119,24 +137,24 @@
   }
 
 
-
+  /* Shadow animation on hover for 'Welcome' text */
   @keyframes shadowAnimation {
     0%   { text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.255); }
-    50% { text-shadow: -12px 6px 2.5px rgba(0, 0, 0, 0.155); }
+    50% { text-shadow: -16px 6px 5px rgba(0, 0, 0, 0.155); }
     100%   { text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.255); }
   }
   @-o-keyframes shadowAnimation{
     0%   { text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.255); }
-    50% { text-shadow: -12px 6px 2.5px rgba(0, 0, 0, 0.155); }
+    50% { text-shadow: -16px 6px 5px rgba(0, 0, 0, 0.155); }
     100%   { text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.255); }
   }
   @-moz-keyframes shadowAnimation{
     0%   { text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.255); }
-    50% { text-shadow: -12px 6px 2.5px rgba(0, 0, 0, 0.155); }
+    50% { text-shadow: -16px 6px 5px rgba(0, 0, 0, 0.155); }
     100%   { text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.255); }
   }
   @-webkit-keyframes shadowAnimation{
     0%   { text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.255); }
-    50% { text-shadow: -12px 6px 2.5px rgba(0, 0, 0, 0.155); }
+    50% { text-shadow: -16px 6px 5px rgba(0, 0, 0, 0.155); }
     100%   { text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.255); }
   }
