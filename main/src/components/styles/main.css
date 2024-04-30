@@ -34,7 +34,7 @@ body {
 
 .block_three {
     height: 100vh;
-    background-color: red;
+    background-color: white;
     scroll-snap-align: center;
 }
 

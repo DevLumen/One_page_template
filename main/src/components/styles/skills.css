@@ -1,0 +1,15 @@
+.title_container {
+    border: 2px red solid;
+}
+
+.aboutMe_container {
+    border: 2px green solid;
+}
+
+.skills_container {
+    border: 2px purple solid;
+}
+
+.edu_container {
+    border: 2px blue solid;
+}
