@@ -25,15 +25,14 @@
 
 /* Used to specifally move my avatar head */
 .my_pic {
-    border: red solid 2px;
+    /* border: red solid 2px; */
 }
 
 .typed_anim {
-    /* text-align: center; */
+    text-align: center;
     position: relative;
-    bottom: 10vh;
-    color: black;
-    border: red solid 2px;
+    bottom: 6vh;
+    color: white;
 }
 
 .fade-out {
@@ -87,18 +86,58 @@
     display: none;
 }
 
-.speechBubble_container {
+.speechBubble_container1 {
+    display: flex;
     background-image: url('../../images/speech_bubble.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
     top: 5vh;
-    left: 62.5vw;
-    height: 15%;
-    width: 18%;
+    left: 63vw;
+    height: 28vh;
+    width: 20vw;
+    overflow:auto;
+    display:inline-block;
     position: absolute;
-    border: 2px green solid;
+    /* border: 2px green solid; */
 }
 
-.speechBubble_typedAnim {
-    color: white;
+.speechBubble_container2 {
+    background-image: url('../../images/speech_bubble_flipped.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    top: 32vh;
+    left: 17.3vw;
+    height: 28vh;
+    width: 20vw;
+    position: absolute;
+    overflow:auto;
+    display:inline-block;
+    /* border: 2px yellow solid; */
+}
+
+.speech_text1 {
+    position: absolute;
+    margin-left: 2.5vw;
+    margin-top: 6.5vh;
+    color: black;
+    z-index: 1;
+    width: 15vw;
+    word-wrap: break-word;
+    /* border: red 3px solid; */
+}
+
+.speech_text2 {
+    font-size: 1.3em;
+    position: absolute;
+    margin-left: 2.85vw;
+    margin-top: 10.8vh;
+    color: black;
+    z-index: 1;
+    width: 15vw;
+    word-wrap: break-word;
+    /* border: red 3px solid; */
 }
 
 

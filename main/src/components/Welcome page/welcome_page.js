@@ -35,12 +35,23 @@ export default function WelcomePage() {
                                 />
                             </h1>
                         </div>
-                        <div className="speechBubble_container">
-                            <div className="speechBubble_typedAnim">
-                                {/* About me... */}
-                                <h2>
+                        <div className="speechBubble_container1">
+                            <div className="speechBubble_typedAnim1">
+                                <h2 className="speech_text1">
+                                    {/* About me... */}
                                     <ReactTyped strings={[
-                                        "Welcome, my name is Andres Soca. ^2000",
+                                        "Welcome, my name is Andres Soca. ^2000"
+                                    ]}
+                                        typeSpeed={15}
+                                        loop
+                                    ></ReactTyped>
+                                </h2>
+                            </div>
+                        </div>
+                        <div className="speechBubble_container2">
+                            <div className="speechBubble_typedAnim2">
+                                <h2 className="speech_text2">
+                                    <ReactTyped strings={[
                                         "I design and code beautiful projects, and I absolutely love what I do. ^4000"
                                     ]}
                                         typeSpeed={15}
