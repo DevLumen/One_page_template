@@ -53,18 +53,19 @@ export default function WelcomePage() {
                         : null}
 
                         {loaded ?
-                        <div className="speechBubble_container2">
-                            <div className="speechBubble_typedAnim2">
-                                <h2 className="speech_text2">
-                                    <ReactTyped strings={[
-                                        "^550 I design and code beautiful projects, and I absolutely love what I do."
-                                    ]}
-                                        typeSpeed={25}
-                                    ></ReactTyped>
-                                </h2>
+                            <div className="speechBubble_container2">
+                                <div className="speechBubble_typedAnim2">
+                                    <h2 className="speech_text2">
+                                        <ReactTyped strings={[
+                                            "^550 I design and code beautiful projects, and I absolutely love what I do."
+                                        ]}
+                                            typeSpeed={25}
+                                        ></ReactTyped>
+                                    </h2>
+                                </div>
                             </div>
-                        </div>
                         : null}
+                        
                     </div>
                 </div>
             </div>
