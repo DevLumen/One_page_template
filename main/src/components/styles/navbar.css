@@ -38,66 +38,16 @@ a {
     animation: tabsAnimation 1s forwards;
 }
 
-.tab_span {
-    display: inline-block;
-    position: fixed;
-    justify-content: center;
-    color: #ffffff !important;
-    font-weight: 100;
-    font-size: 1.2em;
-    font-family: monospace;
-    text-transform: uppercase;
-    transition: all 0.3s ease 0s;
-    transform: translate(-50%, 0);
-}
-
-.tab_span::after {
-    content: '';
-    position: absolute;
-    width: 95%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #ffffff;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-}
-
-.tab_span:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
-
-.tab_span:hover {
-
-    font-weight: 700 !important;
-    letter-spacing: 3px;
-    transition: all 0.3s ease 0s;
-}
-
-.tab_span[aria-selected=true] {
-    text-decoration: underline !important;
-}
-
-/* onClick in react.js page chnages the styling */
-.underlined {
-    text-decoration: underline;
-    color: white;
-}
-
-.logo {
-   /* border: 2px solid red; */
-}
-
 .bubble_logo {
+    left: 45vw;
+    top: 90vh;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
     width: 6%;
     padding: 10px;
-    height: 55px;
 }
 
 .arrow_down {
@@ -125,15 +75,3 @@ a {
         transform: translatey(0px);
     }
 }
-
-@keyframes tabsAnimation {
-    from {
-      opacity: 0;
-      transform: translateY(-30%);
-    }
-    
-    to {
-      opacity: 1;
-      transform: translateY(10%);
-    }
-  }

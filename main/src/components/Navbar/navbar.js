@@ -13,25 +13,10 @@ export default function Navbar() {
                 <div className="dropped_nav"
                     onMouseEnter={() => setIsShown(true)}
                     onMouseLeave={() => setIsShown(false)}
-                >
-                    <div className="tabs_container">
-                        <a href="#welcome"><span className="tab_span">Home</span></a>
-                        <a href="#skills"><span className="tab_span">Skills</span></a>
-                        <div className="logo">
-                            <p>
-                                LOGO
-                            </p>
-                        </div>
-                        <a href="#projects"><span className="tab_span">Projects</span></a>
-                        <a href="#footer"><span className="tab_span">Contact</span></a>
-                    </div>
-                </div>
+                ></div>
             )}
             <div className="bubble_logo">
-                <h1 className="arrow_down expand_menu"
-                    onMouseEnter={() => setIsShown(true)}
-                    onMouseLeave={() => setIsShown(false)}
-                >
+                <h1 className="arrow_down expand_menu">
                     <i className="fa-solid fa-angles-down"></i>
                 </h1>
             </div>

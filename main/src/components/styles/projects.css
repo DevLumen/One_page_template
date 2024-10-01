@@ -21,7 +21,7 @@
 
 .card::after {
     font-family: cursive;
-    content: "Andres Soca";
+    content: "Name";
     position: absolute;
     bottom: 0;
     left: 1vw;
